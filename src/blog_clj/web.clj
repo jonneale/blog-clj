@@ -1,4 +1,4 @@
-(ns blog-clj.core
+(ns blog-clj.web
   (:use compojure.core)
   (:require [compojure.route :as route]))
 
