@@ -5,4 +5,6 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [congomongo "0.4.0"]
-                 [compojure "1.1.5"]])
+                 [compojure "1.1.5"]
+                 [ring/ring-jetty-adapter "1.1.6"]]
+  :main blog-clj.jetty)

@@ -1,6 +1,6 @@
 (ns blog-clj.core-test
   (:use clojure.test
-        blog-clj.core))
+        blog-clj.web))
 
 (deftest a-test
   (testing "FIXME, I fail."

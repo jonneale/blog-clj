@@ -1,7 +1,10 @@
 (ns blog-clj.web
-  (:use compojure.core)
-  (:require [compojure.route :as route]))
+  (:use [compojure.core :only (defroutes GET)]
+        [ring.adapter.jetty]
+        [ring.util.response]))
 
 (defroutes app
-  (GET "/" [] "<h1>Hello World</h1>")
-  (route/not-found "<h1>Page not found</h1>"))
+  (GET "/" [] "<h2>Hello World</h2>"))
+
+(defn -main [port]
+  (run-jetty app {:port (Integer. port)}))
