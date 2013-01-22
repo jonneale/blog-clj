@@ -1,5 +1,5 @@
 (defproject blog-clj "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
+  :description ""
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
@@ -7,4 +7,4 @@
                  [congomongo "0.4.0"]
                  [compojure "1.1.5"]
                  [ring/ring-jetty-adapter "1.1.6"]]
-  :main blog-clj.jetty)
+  :min-lein-version "2.0.0")
