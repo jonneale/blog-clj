@@ -7,6 +7,9 @@
                [:html
                 [:head
                  [:title "Jon Neale - developer, clojure lover, infrequent blog writer"]
-                 [:link {:href "/bootstrap/css/bootstrap.min.css"}]]
+                 [:link {:href "/bootstrap/css/bootstrap.min.css" :media "screen" :rel "stylesheet" :type "text/css"}]
+                 [:link {:href "/bootstrap/css/bootstrap-responsive.min.css" :media "screen" :rel "stylesheet" :type "text/css"}]]
                 [:body
-                 [:h1 "Hello World"]]]))
+                 [:div.container
+                  [:div.page-header
+                   [:h1 "Hello World"]]]]]))
