@@ -1,6 +1,6 @@
 (ns blog-clj.web
   (:require [compojure.route  :as route]
-            [blog.home    :as home])
+            [blog-clj.home    :as home])
   (:use [compojure.core :only (defroutes GET)]
         [ring.adapter.jetty]
         [ring.util.response]))
