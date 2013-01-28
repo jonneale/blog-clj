@@ -46,5 +46,4 @@
                :where {:_id "counter"})]
     (if v-count
       (:value v-count)
-      0)
-    ))
+      0)))
