@@ -2,7 +2,7 @@
   (:require [hiccup.core                             :as hiccup]
             [hiccup.page                             :as page]))
 (defn html
-  []
+  [visit-count]
   (hiccup/html (page/doctype :html5)
                [:html
                 [:head
@@ -12,4 +12,5 @@
                 [:body
                  [:div.container
                   [:div.page-header
-                   [:h1 "Hello World"]]]]]))
+                   [:h1 "Hello World"]
+                   [:h2 (str "You are page view number: " visit-count)]]]]]))
